@@ -7,7 +7,7 @@ MongoClient.connect('mongodb://localhost:27017/Todo',{ useNewUrlParser: true },(
     console.log('Connected to DB!');
     var dbo = db.db('TodoApp');
     // 
-    dbo.collection('Users').findOneAndUpdate({name:'vaibhav'},{
+    dbo.collection('Users').findOneAndUpdate({name:'Vaibhav'},{
         $set:{ name:'jocobs vala vaibhav' },
         $inc:{
             age:+1
